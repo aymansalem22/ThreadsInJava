@@ -5,17 +5,12 @@
  */
 package oopjava;
 
-/**
- *
- * @author sayma
- */
+
 public class OOPJAVA {
 
-    /**
-     * @param args the command line arguments
-     */
+ 
     public static void main(String[] args) {
-        // TODO code application logic here
+    //WELCOME 
     }
     
 }
