@@ -51,10 +51,12 @@ public class HashTable2 {
         }
 
         ArrayList<Employee> searchList = table.get(searchRange);
+        System.out.println("*********search one range to access one employe in this age**********");
         System.out.println(searchList);
         System.out.println("");
         System.out.println("");
         System.out.println("");
+
         System.out.println("*****display all the lists key with value************");
         for (Map.Entry<Range, ArrayList<Employee>> entry : table.entrySet()) {
             Range key = entry.getKey();
@@ -72,16 +74,15 @@ public class HashTable2 {
 
         System.out.println("**************");
         System.out.println("*********search one age after i have the range confirm in last search **********");
-        ArrayList<Employee> searchList1=table.get(searchRange);
-        System.out.println("Search in : "+searchList1.size());
-        Employee e=null;
+        ArrayList<Employee> searchList1 = table.get(searchRange);
+        System.out.println("Search in : " + searchList1.size());
+        Employee e = null;
         for (Employee employee : searchList1) {
-            if(age==employee.getAge()){
-            e=employee;
+            if (age == employee.getAge()) {
+                e = employee;
             }
         }
         System.out.println(e);
-        
 
     }
 }
