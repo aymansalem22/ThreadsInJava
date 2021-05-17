@@ -1,4 +1,4 @@
-package Practice2;
+package practice3;
 
 import java.io.PrintWriter;
 
@@ -9,18 +9,15 @@ public class NumberWriter implements Runnable {
     public NumberWriter(PrintWriter out) {
         this.out = out;
     }
-
     @Override
     public void run() {
-
-        try {
-            for (int i = 1; i <= 20; i++) {
-                out.println(i);
-                out.flush();
+        for (int i = 1; i <= 20; i++) {
+            try {
+                Thread.sleep(190);
+            } catch (Exception e) {
             }
-        } catch (Exception e) {
+            out.println(i);
         }
-
     }
 
 }
